@@ -13,8 +13,6 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Elijah's Bachelor Party</title>
-
-    <script src ="script.js"></script>
   </head>
   <body>
     <div id ="intro-hide" class="intro">
@@ -24,7 +22,7 @@
     <div id="main-content" class="hidden">
     <main>
       <header class="header responsive-container">
-        <nav class=>
+        <nav class>
           <ul class="nav-bar">
             <li class="hidden nav-item"><a href="#">Home</a></li>
             <li class="nav-item"><a href="#activities">Activites</a></li>
@@ -47,7 +45,7 @@
           />
           <div class="details-text">
             <h2 class="neon">Come One Come All to Celebrate Elijah</h2>
-            <p>
+            <p class="sub-heading-text">
               I’m so excited for you to join me for my bachelor party this
               summer! More Details Below.
             </p>
@@ -61,7 +59,7 @@
         <div class="grid grid-4">
           <article class="card">
             <img
-              class="neon-border card-img"
+              class="card-img"
               src="/images/activities/D&Bs Nashville.jpg"
             />
             <div class="card-margin">
@@ -76,7 +74,7 @@
           </article>
           <article class="card">
             <img
-              class="neon-border card-img"
+              class="card-img"
               src="/images/activities/Axe Throwing.webp"
             />
             <div class="card-margin">
@@ -91,7 +89,7 @@
 
           <article class="card">
             <img
-              class="neon-border card-img"
+              class="card-img"
               src="/images/activities/powerpoint.jpg"
             />
             <div class="card-margin">
@@ -105,7 +103,7 @@
 
           <article class="card">
             <img
-              class="neon-border card-img"
+              class="card-img"
               src="/images/activities/sports-betting.jpg"
             />
             <div class="card-margin">
@@ -113,11 +111,9 @@
               <p>
                 While I do not expect you to empty your bank account on it, I do
                 ask that you sports bet at least one game a day with me while
-                we’re there (minus my brother, who can’t because of work.)
+                we’re there.
                 Ideally, we cook up something together and watch it cash at a
-                bar. You can do as little as $1 per day on a bet. I found that
-                rooting on bets you placed together is a top-5 experience in
-                life and increases your investment in the games.
+                bar. You can do as little as $1 per day on a bet.
               </p>
             </div>
           </article>
@@ -126,39 +122,239 @@
     </section>
     <section
       id="grooms-people"
-      class="grooms-people container-padding responsive-container"
-    >
+      class="grooms-people container-padding responsive-container">
       <div class="container-width">
+        <div class="heading-subheading">
         <h2 class="neon">Meet the Party</h2>
-        <p>
+        <p class="sub-heading-text">
           Some of you might not know each other, so I wanted to put some
           descriptions of people ahead of time so you can get to know them a
           little better
         </p>
+      </div>
         <article class="grooms-person">
-          <div class="grooms-person-name">
-            <h3 class="neon">Immanuel Kerr-Brown</h3>
-          </div>
-          <div class="flex-row-people hidden">
-            <img class="grooms-person-img" src="/images/Attendees/ima.jpg" />
+          <button class="btn-groom neon"><span>Immanuel Kerr-Brown</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <img class="grooms-person-img neon-border" src="/images/Attendees/ima.jpg" />
+            <div class="grooms-text">
             <p>
               You know Immanuel as my brother, I know him as my bully from ages
               5-12, and now, as my best man. Though he’s a Blue Devil, Blood
               runs thicker than the battle of blues. He’s an awesome personality
               who I know will bring the fun to the dance floor and make sure
-              everything goes as smoothly as possible. Fun Acts About Immmanuel:
-              Loves Anime and Rom-Coms Enjoys Hiking and Travelling and
-              rock-climbing Absolute machine on the dance floor
+              everything goes as smoothly as possible.</p><p class="fact-intro"> Fun Facts About Immmanuel:</p>
+              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg"> <span>Loves Anime and Rom-Coms</span></li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Enjoys Hiking and Travelling and
+                  rock-climbing</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Absolute machine on the dance floor</li>
+              </ul>
             </p>
           </div>
+        </div>
         </article>
+        <article class="grooms-person">
+          <button class="btn-groom neon"><span>Ben Cournoyer</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <div class="grooms-text">
+              <p>
+                Ben’s defining life achievement was when he came back down 20 in the middle of the third quarter to beat my Cavs in NBA 2k17 (Kyrie missed 2 clutch free throws to seal the game). When not glazing the Celtics or making ill-advised dynasty football trades, Ben is competing with me in GamePigeon mini-games. Ben helped me the most when I struggled with my identity and wrestling and supported me through one of the most transformative periods of my life. Though Ben is the worst Dynasty manager I’ve ever seen play the game, He’ll have the chance to trade Lazard to 4 other players in our league Nashville Weekend.</p><p class="fact-intro"> Fun Facts About Ben:</p>
+                <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Boston sports fanatic</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Master instigator</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Will say out of pocket stuff</li>
+                </ul>
+              </p>
+            </div>
+            <img class="grooms-person-img neon-border" src="/images/Attendees/Ben.jpg" />
+        </div>
+        </article>
+
+        <article class="grooms-person">
+          <button class="btn-groom neon"><span>Destoe</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <img class="grooms-person-img neon-border" src="/images/Attendees/destoe.jpg" />
+            <div class="grooms-text">
+            <p>
+              Destiny isn’t afraid to put anyone in check. Just because she has a lovable personality, doesn’t mean she can’t get down and dirty if need be. If there is a karaoke night, expect me and destoe to duet multiple songs.</p><p class="fact-intro"> Fun Facts About Destiny:</p>
+              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Drew on the school walls in kindergarten because she didn’t want to take a nap</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Almost failed college PE due to absences, came to class one day and outperformed every person, earning the respect of the teacher.</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Had a short-lived rapping career</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        </article>
+
+
+
+        <article class="grooms-person">
+          <button class="btn-groom neon"><span>Elijah Glick</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <div class="grooms-text">
+              <p>
+                  Elijah Glick and I were known as Elijah squared in High School. This man is probably the easiest person I’ve ever talked to and is so good at matching your energy. Don’t worry about the ladies this trip, they’ll flock to Elijah and he will (maybe) introduce you to them.</p><p class="fact-intro">Fun Facts About Elijah:</p>
+                <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Absolute degen gambler</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Fortnite fiend</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Has so many shenanigan war stories to tell you</li>
+                </ul>
+              </p>
+            </div>
+            <img class="grooms-person-img neon-border" src="/images/Attendees/Ben.jpg" />
+        </div>
+        </article>
+  
+  
+      <article class="grooms-person">
+          <button class="btn-groom neon"><span>Hailey</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <img class="grooms-person-img neon-border" src="/images/Attendees/hailey.jpg" />
+            <div class="grooms-text">
+            <p>
+              Hailey and I connected instantly once we had conversations. She and I basically read each other’s minds, and we have the same basic white-girl tastes. Her joyous and adventurous energy will make this trip so much fun.</p><p class="fact-intro">Fun Facts About Hailey:</p>
+              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Drew on the school walls in kindergarten because she didn’t want to take a nap</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Almost failed college PE due to absences, came to class one day and outperformed every person, earning the respect of the teacher.</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Had a short-lived rapping career</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        </article>
+
+
+        <article class="grooms-person">
+          <button class="btn-groom neon"><span>Ian McFarland</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <div class="grooms-text">
+              <p>
+                  Ian was my chauffeur during my senior year of High school. I spent countless hours losing FIFA to Ian, and when I would win, it was worth every loss I took because he was so upset about it. He’s a loyal friend who I can call up and have an hour conversation with at any point of the day.</p><p class="fact-intro">Fun Facts About Ian:</p>
+                <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Outdoor sports guy: Skateboarding, Snowboarding, ETC</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Consumes so much anime (Thanks to me)</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">The most competitive person I’ve ever met</li>
+                </ul>
+              </p>
+            </div>
+            <img class="grooms-person-img neon-border" src="/images/Attendees/ian.png" />
+        </div>
+        </article>
+  
+  
+      <article class="grooms-person">
+          <button class="btn-groom neon"><span>Jack Clark</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <img class="grooms-person-img neon-border" src="/images/Attendees/jack.png" />
+            <div class="grooms-text">
+            <p>
+              ‘South Jersey Legend’ Jack Clark was supposed to be the next best thing in Wrestling. Unfortunately, because of injuries, not really caring, and lack of NIL during his athletic days, the best thing that happened to him in college was that he met me. Jack is a bro who can and will talk about literally anything, making him the perfect person to sit on a couch and watch football all weekend with.</p><p class="fact-intro">Fun Facts About Jack:</p>
+              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Degenerate gambler</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Will do just about anything when drunk</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Philly fan</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        </article>
+
+
+        <article class="grooms-person">
+          <button class="btn-groom neon"><span>James Szymanski</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <div class="grooms-text">
+              <p>
+                  Don’t let his Long Island accent and punchable face fool you; James is a considerate friend who loves to shoot the shit. Many of my college memories were made just by fucking around with him. Avoid insulting him though, because he will exploit and attack your insecurities and will not feel bad about it.</p><p class="fact-intro">Fun Facts About James:</p>
+                <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Likes doing outdoor activities: hiking, fishing, visiting vational parks</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Very well traveled</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Loves to talk about how great he is at everything</li>
+                </ul>
+              </p>
+            </div>
+            <img class="grooms-person-img neon-border" src="/images/Attendees/james.jpg" />
+        </div>
+        </article>
+  
+  
+      <article class="grooms-person">
+          <button class="btn-groom neon">Miles Threadgill<img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <img class="grooms-person-img neon-border" src="/images/Attendees/miles.JPG" />
+            <div class="grooms-text">
+            <p>
+              Miles is my longest friend. He’s been by my side since 2003, and is the GOAT Secret Teller, winning the Most Valuable Player award in ‘Telling my Crushes I Liked Them After I Specifically Told Him Not To’ every year from 2003-2009. His presence will bring a calming aura to the party.</p><p class="fact-intro">Fun Facts About Miles:</p>
+              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">This man loves the outdoors and has several hunting dogs</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Anime Lover</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">'Bama fan</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        </article>
+
+        <article class="grooms-person">
+          <button class="btn-groom neon"><span>Mitchell Resor</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <div class="grooms-text">
+              <p>
+                  When not betting on Brazilian basketball or European Basketball Unders, Mitchell can be found either in the Gym, doing a Pokemon GO incense walk, or playing COD. Mitchell was my first friend in NYC, and probably the only person I hang out with here, aside from Gaby. Mitchell will tell you to bet on some sort of foreign sport at any given moment of the day; If you tail, you will lose, and if you don’t, he will profit. It always works like that.</p><p class="fact-intro">Fun Facts About Mitchell:</p>
+                <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Likes Anime</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">(If you couldn’t already tell) Sports betting fiend, likes to gatekeep locks</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Pokemon genius</li>
+                </ul>
+              </p>
+            </div>
+            <img class="grooms-person-img neon-border" src="/images/Attendees/razey.png" />
+        </div>
+        </article>
+  
+  
+      <article class="grooms-person">
+          <button class="btn-groom neon">Randy Roden<img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <img class="grooms-person-img neon-border" src="/images/Attendees/Randy.webp" />
+            <div class="grooms-text">
+            <p>
+              Randy is the person I wanted to be growing up: Hard working and serious, yet never taking himself or life too seriously. If you know Randy, you know he is a one-of-a-kind person. His laid-back nature might be tested this weekend, though.</p><p class="fact-intro">Fun Facts About Randy:</p>
+              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Plays just about any and every video game known to man</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Owns a BJJ gym</li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Loves anime</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        </article>
+  
+  
+        <article class="grooms-person">
+          <button class="btn-groom neon"><span>Anthony Bosco - Honorary Bachelor</span><img class="guitar-person" src="/images/guitar.svg">
+          </button>
+          <div class="flex-row-people hide">
+            <div class="grooms-text">
+              <p>
+                  Mr. Anthony Bosco is not a groomsperson, but if you’ve seen him on a night out, he knows how to throw down. A man who is constantly on the dance floor vibing, I expect Bosco to be one of the highlights of the weekend.</p><p class="fact-intro">Fun Facts About Bosco:</p>
+                <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Chicago Sports Fan (Sad life)</li>
+                  <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">An absolute degen</li>
+                </ul>
+              </p>
+            </div>
+            <img class="grooms-person-img neon-border" src="/images/Attendees/bosco.JPG" />
+        </div>
+        </article>
+
       </div>
     </section>
     <section id="rules" class="rules flex-column responsive-container">
       <div class="container-width">
-        <div class="rules-heading">
+        <div class="rules-heading heading-subheading">
           <h2 class="neon align-self">Rules</h2>
-          <p>
+          <p class="sub-heading-text">
             I know rules are a buzzkill, but to make this weekend the most fun
             it can be, I must set some baselines.
           </p>
@@ -166,7 +362,7 @@
         <div class="grid grid-3">
           <article class="card rules-card">
             <img
-              class="neon-border card-img"
+              class="card-img"
               src="/images/rules/control-liqueur.webp"
             />
             <div class="card-margin">
@@ -175,11 +371,13 @@
                 Whether your mindset is “This is woke P.C. created by the libs”
                 or “I need a safe space”, we can all agree that this weekend is
                 about me. What I want is to have as much fun as possible with
-                the people I love, so please, none of the following: Do not use
+                the people I love, so please, none of the following:</p><p>Do not use
                 any phrases that can be discriminatory toward sexual
                 orientation, race, and/or disabilities. You do not know every
                 person’s story and what they consider hurtful/offensive. Shoot
-                the shit but don’t cross any lines. No fighting. While I doubt
+                the shit but don’t cross any lines.</p>
+                
+                <p>No fighting. While I doubt
                 this will be an issue, I still want to clarify that I do not
                 want any skirmishes within the group or externally. If you have
                 a problem, mediate it or vent to someone you know there
@@ -189,24 +387,25 @@
           </article>
           <article class="card rules-card">
             <img
-              class="neon-border card-img"
+              class="card-img"
               src="/images/rules/control-liqueur.webp"
             />
             <div class="card-margin">
               <h4>Control Your Liquor</h4>
               <p>
                 While I do want us to have fun and let loose, we all need to be
-                responsible enough with our drinking and actions. I am not
+                responsible enough with our drinking and actions. </p><p>I am not
                 afraid to put you on a drinking ban if a night goes too wonky
                 because of you, and I hope you will hold me to the same
                 standard.
+
               </p>
             </div>
           </article>
 
           <article class="card rules-card">
             <img
-              class="neon-border card-img"
+              class="card-img"
               src="/images/activities/powerpoint.jpg"
             />
             <div class="card-margin">
@@ -214,21 +413,29 @@
               <p>
                 Unfortunately, no one here came from families where we were
                 spoon-fed hundred-dollar bills. Flights and hotels might be
-                expensive. I appreciate you just making the trip. If you can’t
+                expensive. I appreciate you just making the trip.</p>
+                
+                <p>If you can’t
                 make it, or if you can only come for a night or two, I will
-                understand. I want to keep it relatively cheap once we get
+                understand. </p> <p>I want to keep it relatively cheap once we get
                 there. The only activities I have on the agenda are bowling and
                 Dave and Busters and Axe Throwing. All are optional, but I would
                 like it if you were at least there if you do not want to
-                participate. Food/drinks will be split based on what you order
+                participate. </p><p>Food/drinks will be split based on what you order
                 and calculated at the end of the trip. I want you to make this
                 trip but not empty the bank.
               </p>
             </div>
           </article>
+
+
+
+
+          
         </div>
       </div>
     </section>
   </div>
-  </body>
+
+  <script src ="script.js"></script>
 </html>

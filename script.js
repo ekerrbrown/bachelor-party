@@ -18,3 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("#heading-text").classList.add("header-heading");
   }, 3000); // 3500 milliseconds = 3 seconds
 });
+
+const description = document.querySelectorAll(".flex-row-people");
+const person = document.querySelectorAll(".btn-groom");
+const guitar = document.querySelectorAll("guitar-person");
+
+person.forEach((groom) => {
+  groom.addEventListener("click", function () {
+    groom.nextElementSibling.classList.toggle("hide");
+    groom.lastElementChild.classList.toggle("rotate");
+  });
+});
