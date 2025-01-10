@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  color: #fff;
+}
+
+html {
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  font-size: 3.5rem;
+}
+
+@keyframes intro-fade {
+  0% {
+    opacity: 1;
+    display: inherit;
+  }
+  50% {
+    opacity: 1;
+    display: inherit;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes neonize {
+  from {
+    text-shadow: 0 0 8px #fff, 0 0 60px #b915cc, 0 0 120px #b915cc,
+      0 0 80px #b915cc;
+  }
+  to {
+    text-shadow: 0 0 4px #fff, 0 0 30px 0 0 60px #ff9535, 0 0 80px #ff9535;
+  }
+}
+
+@keyframes hover {
+  0% {
+    transform: translateY();
+  }
+
+  50% {
+    transform: translateY(-0.2rem);
+  }
+
+  100% {
+    transform: translateY();
+  }
+}
+
+.neon {
+  font-family: "neonderthaw";
+  color: white;
+  font-weight: normal;
+  text-shadow: 0 0 4px #fff, 0 0 30px #ff9535, 0 0 5px #ff9535, 0 0 60px #ff9535,
+    0 0 80px #ff9535;
+}
+
+.sub-heading {
+  display: block;
+}
+
+.header {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/images/bg/bg-hero.webp");
+  background-position: bottom;
+  height: 100vh;
+}
+
+.details {
+  background-color: #1d1d1d;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.details-img {
+  max-width: 25rem;
+  height: auto;
+}
+
+.activities {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/images/bg/bg-activities.webp");
+  background-position: center;
+}
+
+.rules {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/images/bg/rules-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1d;
+  width: 15rem;
+  border-radius: 9px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 4px #fff, 0 0 30px #ff9535, 0 0 5px #ff9535, 0 0 60px #ff9535;
+}
+
+.rules-card {
+  width: 20rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  padding-top: 2rem;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  padding-top: 2rem;
+}
+
+.grooms-people {
+  background-color: #1d1d1d;
+}
+
+.flex-row-people {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-width {
+  max-width: 75rem;
+  margin: auto;
+  padding: 5rem 0;
+}
+
+.card-margin {
+  padding: 1.5rem 1rem;
+}
+.card-img {
+  border-radius: 8px 8px 0 0;
+  max-width: 100%;
+}
+
+.rules-heading {
+  text-align: center;
+}
+
+.details-row {
+  gap: 3rem;
+  justify-content: center;
+}
+
+.card:hover,
+.card:active {
+  animation: hover 2s ease-in-out infinite;
+  box-shadow: 0 0 4px #fff, 0 0 30px #b915cc, 0 0 5px #b915cc, 0 0 60px #b915cc;
+}
+
+.nav-bar {
+  display: flex;
+  font-family: "neonderthaw";
+  flex-direction: row;
+  gap: 20px;
+  justify-content: end;
+  padding-top: 3rem;
+  padding-right: 20rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.nav-item a:hover::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background-color: #ff9535;
+}
+
+.nav-item a:link,
+.nav-item a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  color: #ff9535;
+}
+
+.intro {
+  background-color: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/images/bg/bg-gif.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-color: black;
+
+  animation: intro-fade 3s;
+}
+
+.intro-text {
+  text-shadow: 0 0 4px #fff, 0 0 30px #ff9535, 0 0 5px #ff9535, 0 0 60px #ff9535,
+    0 0 80px #ff9535;
+  animation: neonize 1.5s ease-in;
+}
+
+.header-heading {
+  font-size: 4rem;
+  animation: neonize 1.5s ease-in;
+}
+
+.hidden {
+  display: none;
+}
