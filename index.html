@@ -22,11 +22,11 @@
     <div id="main-content" class="hidden">
     <main>
       <header class="header responsive-container">
-        <nav class>
+        <nav>
           <ul class="nav-bar">
             <li class="hidden nav-item"><a href="#">Home</a></li>
             <li class="nav-item"><a href="#activities">Activites</a></li>
-            <li class="nav-item"><a href="#grooms-people">Party</a></li>
+            <li class="nav-item"><a href="#grooms-people">Rock Stars</a></li>
             <li class="nav-item"><a href="#rules">Rules</a></li>
           </ul>
         </nav>
@@ -57,7 +57,7 @@
       <div class="container-width flex-column">
         <h2 class="neon">Activities</h2>
         <div class="grid grid-4">
-          <article class="card">
+          <article class="card activity-card" data-card="1">
             <img
               class="card-img"
               src="/images/activities/D&Bs Nashville.jpg"
@@ -65,14 +65,14 @@
             <div class="card-margin">
               <h4>Dave and Buster’s</h4>
               <p>
-                A favorite pasttime of mine, D&B’s is the ultimate stop to
+                A favorite pastime of mine, D&B’s is the ultimate stop to
                 having fun. This particular D&B’s has bowling, which will be the
-                primary activity, but expect to charge up your gamercard and win
-                some tickets.
+                primary activity, but if you're up for, you can charge up your gamercard and win
+                some prizes.
               </p>
             </div>
           </article>
-          <article class="card">
+          <article class="card activity-card" data-card="2">
             <img
               class="card-img"
               src="/images/activities/Axe Throwing.webp"
@@ -87,7 +87,7 @@
             </div>
           </article>
 
-          <article class="card">
+          <article class="card activity-card" data-card="3">
             <img
               class="card-img"
               src="/images/activities/powerpoint.jpg"
@@ -95,13 +95,13 @@
             <div class="card-margin">
               <h4>Hall Pass PowerPoint</h4>
               <p>
-                In lieu of strippers, come Prepared with a PowerPoint of your
-                top 5 (or 10) of your celebrity hall passes
+                In lieu of strippers, we are presenting our
+                top 5 (or 10) celebrity hall passes.</p> <p>Be prepared to explain why and we will collectively decide who has elite ball knowledge and who needs to spend more time in the gym.
               </p>
             </div>
           </article>
 
-          <article class="card">
+          <article class="card activity-card" data-card="4">
             <img
               class="card-img"
               src="/images/activities/sports-betting.jpg"
@@ -125,28 +125,44 @@
       class="grooms-people container-padding responsive-container">
       <div class="container-width">
         <div class="heading-subheading">
-        <h2 class="neon">Meet the Party</h2>
+        <h2 class="neon">Meet the Rock Stars</h2>
         <p class="sub-heading-text">
           Some of you might not know each other, so I wanted to put some
           descriptions of people ahead of time so you can get to know them a
           little better
         </p>
       </div>
+      <article class="grooms-person">
+        <button class="btn-groom neon"><span>Elijah Kerr-Brown: The Bachelor</span><img class="guitar-person" src="/images/guitar.svg">
+        </button>
+        <div class="flex-row-people hide">
+          <div class="grooms-text">
+          <p>
+            The hella extra person who made this website. This enigma somehow found someone who wants to spend the rest of their life with him. With a contradictory personality thinly toeing the lines between seriousness and playfulness, Elijah will bring good times and cherish the memories made this weekend.</p><p class="fact-intro"> Fun Facts About Elijah:</p>
+            <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg"> <span>Aspiring Ninja Warrior Champion</span></li>
+              <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Will stay out until 4:00 am listening to live music</li>
+              <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Can beat Noah Lyles in the 100M</li>
+            </ul>
+          </p>
+        </div>
+        <img class="grooms-person-img neon-border" src="/images/Attendees/ekb.png" />
+      </div>
+      </article>
         <article class="grooms-person">
-          <button class="btn-groom neon"><span>Immanuel Kerr-Brown</span><img class="guitar-person" src="/images/guitar.svg">
+          <button class="btn-groom neon"><span>Immanuel Kerr-Brown: Best Man</span><img class="guitar-person" src="/images/guitar.svg">
           </button>
           <div class="flex-row-people hide">
             <img class="grooms-person-img neon-border" src="/images/Attendees/ima.jpg" />
             <div class="grooms-text">
             <p>
               You know Immanuel as my brother, I know him as my bully from ages
-              5-12, and now, as my best man. Though he’s a Blue Devil, Blood
+              5-12, and now, as my best man. Though he’s a Blue Devil, blood
               runs thicker than the battle of blues. He’s an awesome personality
               who I know will bring the fun to the dance floor and make sure
               everything goes as smoothly as possible.</p><p class="fact-intro"> Fun Facts About Immmanuel:</p>
-              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg"> <span>Loves Anime and Rom-Coms</span></li>
-                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Enjoys Hiking and Travelling and
-                  rock-climbing</li>
+              <ul><li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg"> <span>Loves anime and rom-coms</span></li>
+                <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Enjoys Hiking, travelling and
+                  rock climbing</li>
                 <li class="fun-fact"><img class="guitar-bullets" src="images/guitar.svg">Absolute machine on the dance floor</li>
               </ul>
             </p>
@@ -333,7 +349,7 @@
   
   
         <article class="grooms-person">
-          <button class="btn-groom neon"><span>Anthony Bosco - Honorary Bachelor</span><img class="guitar-person" src="/images/guitar.svg">
+          <button class="btn-groom neon"><span>Anthony Bosco - Esteemed Guest</span><img class="guitar-person" src="/images/guitar.svg">
           </button>
           <div class="flex-row-people hide">
             <div class="grooms-text">
@@ -360,10 +376,10 @@
           </p>
         </div>
         <div class="grid grid-3">
-          <article class="card rules-card">
+          <article class="card rules-card" data-card="5">
             <img
               class="card-img"
-              src="/images/rules/control-liqueur.webp"
+              src="/images/rules/pc.png"
             />
             <div class="card-margin">
               <h4>Be Respectful</h4>
@@ -371,21 +387,22 @@
                 Whether your mindset is “This is woke P.C. created by the libs”
                 or “I need a safe space”, we can all agree that this weekend is
                 about me. What I want is to have as much fun as possible with
-                the people I love, so please, none of the following:</p><p>Do not use
+                the people I love. While I doubt
+                there will be any issues, I want to set expectations. Please, do not:</p>
+                <p>Use
                 any phrases that can be discriminatory toward sexual
                 orientation, race, and/or disabilities. You do not know every
                 person’s story and what they consider hurtful/offensive. Shoot
                 the shit but don’t cross any lines.</p>
                 
-                <p>No fighting. While I doubt
-                this will be an issue, I still want to clarify that I do not
+                <p>No fighting. I do not
                 want any skirmishes within the group or externally. If you have
                 a problem, mediate it or vent to someone you know there
                 (including me).
               </p>
             </div>
           </article>
-          <article class="card rules-card">
+          <article class="card rules-card" data-card="6">
             <img
               class="card-img"
               src="/images/rules/control-liqueur.webp"
@@ -396,17 +413,17 @@
                 While I do want us to have fun and let loose, we all need to be
                 responsible enough with our drinking and actions. </p><p>I am not
                 afraid to put you on a drinking ban if a night goes too wonky
-                because of you, and I hope you will hold me to the same
+                because of you, and I hope you hold me to the same
                 standard.
 
               </p>
             </div>
           </article>
 
-          <article class="card rules-card">
+          <article class="card rules-card" data-card="7">
             <img
               class="card-img"
-              src="/images/activities/powerpoint.jpg"
+              src="/images/rules/patrick.jpg"
             />
             <div class="card-margin">
               <h4>Be Financially Responsible</h4>
@@ -415,14 +432,17 @@
                 spoon-fed hundred-dollar bills. Flights and hotels might be
                 expensive. I appreciate you just making the trip.</p>
                 
-                <p>If you can’t
-                make it, or if you can only come for a night or two, I will
-                understand. </p> <p>I want to keep it relatively cheap once we get
+                <p>I want to keep it relatively cheap once we get
                 there. The only activities I have on the agenda are bowling and
                 Dave and Busters and Axe Throwing. All are optional, but I would
                 like it if you were at least there if you do not want to
-                participate. </p><p>Food/drinks will be split based on what you order
-                and calculated at the end of the trip. I want you to make this
+                participate. </p>
+                
+                
+                <p>Food/drinks will be split based on what you order
+                and calculated at the end of the trip. </p>
+                
+                <p>I understand if you can't make this trip, can only make it for part of the trip, and/or do not want to participate in all activities. Your presence would be enough for me. I want you to make this
                 trip but not empty the bank.
               </p>
             </div>

@@ -10,7 +10,6 @@ body {
 }
 
 html {
-  font-size: 1rem;
   font-family: sans-serif;
 }
 
@@ -50,6 +49,29 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.nav-bar {
+  display: flex;
+  font-family: "neonderthaw";
+  flex-direction: row;
+  gap: 20px;
+  justify-content: end;
+  padding-top: 3rem;
+  padding-right: 20rem;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+.nav-item a:link,
+.nav-item a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  color: #ff9535;
 }
 
 h1 {
@@ -172,7 +194,7 @@ p {
 }
 
 .grooms-people {
-  background-color: #1d1d1d;
+  background-color: #000;
 }
 
 .flex-row-people {
@@ -194,6 +216,7 @@ p {
 .card-img {
   border-radius: 8px 8px 0 0;
   max-width: 100%;
+  height: 157.87px;
 }
 
 .rules-heading {
@@ -211,36 +234,6 @@ p {
   box-shadow: 0 0 4px #fff, 0 0 30px #b915cc, 0 0 5px #b915cc, 0 0 60px #b915cc;
 }
 
-.nav-bar {
-  display: flex;
-  font-family: "neonderthaw";
-  flex-direction: row;
-  gap: 20px;
-  justify-content: end;
-  padding-top: 3rem;
-  padding-right: 20rem;
-  font-size: 1.5rem;
-  align-items: center;
-}
-
-.nav-item a:hover::after {
-  content: "";
-  width: 20px;
-  height: 3px;
-  background-color: #ff9535;
-}
-
-.nav-item a:link,
-.nav-item a:visited {
-  text-decoration: none;
-  color: #fff;
-}
-
-.nav-item a:hover,
-.nav-item a:active {
-  color: #ff9535;
-}
-
 .intro-text {
   text-shadow: 0 0 4px #fff, 0 0 30px #ff9535, 0 0 5px #ff9535, 0 0 60px #ff9535,
     0 0 80px #ff9535;
@@ -250,10 +243,6 @@ p {
 .header-heading {
   font-size: 4rem;
   animation: neonize 1.5s ease-in;
-}
-
-.hidden {
-  display: none;
 }
 
 .hide {
@@ -344,4 +333,209 @@ h2 {
 .fact-intro {
   margin-top: 1rem;
   font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .nav-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    padding-right: 0;
+    font-size: 1.5rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* mobile font sizes */
+  h1 {
+    font-size: 2.5rem;
+    width: 30rem;
+  }
+
+  /* Grids */
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .card {
+    margin: auto;
+  }
+
+  /* Rockstars */
+  .flex-row-people {
+    flex-direction: column;
+  }
+
+  .grooms-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  .grooms-text {
+    order: 2;
+  }
+
+  .grooms-person-img {
+    max-width: 50%;
+    align-self: center;
+  }
+
+  .details-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+  }
+
+  .details-row img {
+    flex-direction: column;
+    max-width: 70%;
+  }
+
+  .grooms-text {
+    width: 22rem;
+    align-self: center;
+  }
+  .heading-subheading {
+    padding: 0 1rem;
+  }
+
+  .heading-subheading h2 {
+    text-align: center;
+  }
+
+  .fun-fact {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    gap: 0.5rem;
+    line-height: 1.5rem;
+  }
+
+  .header-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 601px) {
+  .nav-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    padding-right: 0;
+    font-size: 1.5rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /* mobile font sizes */
+  h1 {
+    font-size: 2.5rem;
+    width: 30rem;
+  }
+
+  /* Grids */
+  .grid-3 {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .card {
+    margin: auto;
+  }
+
+  .activity-card {
+    height: 440px;
+  }
+
+  .rules-card {
+    height: 710px;
+  }
+
+  /* Rockstars */
+  .flex-row-people {
+    flex-direction: column;
+  }
+
+  .grooms-person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  .grooms-text {
+    order: 2;
+  }
+
+  .grooms-person-img {
+    max-width: 50%;
+    align-self: center;
+  }
+
+  .details-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+  }
+
+  .details-row img {
+    flex-direction: column;
+    max-width: 40%;
+  }
+
+  .grooms-text {
+    width: 22rem;
+    align-self: center;
+  }
+  .heading-subheading {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading-subheading h2 {
+    text-align: center;
+  }
+
+  .sub-heading-text {
+    line-height: 1.6rem;
+  }
+
+  .fun-fact {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    gap: 0.5rem;
+    line-height: 1.5rem;
+  }
+
+  .header-heading {
+    font-size: 2.5rem;
+  }
+}
+
+.hidden {
+  display: none;
 }
