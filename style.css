@@ -18,7 +18,7 @@ html {
 .header {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/images/bg/bg-hero.webp");
+    url("images/bg/bg-hero.webp");
   background-position: bottom;
   background-size: cover;
   height: 100vh;
@@ -27,7 +27,7 @@ html {
 .intro {
   background-color: black;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/images/bg/bg-gif.gif");
+    url("images/bg/bg-gif.gif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,13 +39,13 @@ html {
 
 .activities {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/images/bg/bg-activities.webp");
+    url("images/bg/bg-activities.webp");
   background-position: center;
 }
 
 .rules {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/images/bg/rules-bg.jpg");
+    url("images/bg/rules-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
